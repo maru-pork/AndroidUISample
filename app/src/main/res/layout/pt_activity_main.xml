@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sv_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TableLayout
+            android:id="@+id/tbl_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!-- Row Header -->
+            <TableRow
+                android:id="@+id/tr_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ff00aa63">
+                <TextView
+                    android:id="@+id/tr_tv_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="ID"
+                    android:textColor="@android:color/background_light"
+                    android:typeface="normal"
+                    android:fontFamily="sans-serif-medium" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="Given Name"
+                    android:textColor="@android:color/background_light"
+                    android:typeface="normal"
+                    android:fontFamily="sans-serif-medium" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="Middle Name"
+                    android:textColor="@android:color/background_light"
+                    android:typeface="normal"
+                    android:fontFamily="sans-serif-medium" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="Surname"
+                    android:textColor="@android:color/background_light"
+                    android:typeface="normal"
+                    android:fontFamily="sans-serif-medium" />
+            </TableRow>
+        </TableLayout>
+
+        <!-- Footer -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ff00aa63">
+            <TextView
+                android:id="@+id/tv_page_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+                android:text="Page 1 of 50"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+            <Button
+                android:id="@+id/btn_prev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="2dp"
+                android:text="Prev"
+                style="?android:attr/buttonStyleSmall"/>
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="10dp"
+                android:text="Next"
+                style="?android:attr/buttonStyleSmall"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
